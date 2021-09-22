@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Андрей Митрофанов](https://up.htmlacademy.ru/htmlcss/32/user/429567).
-* Наставник: `Неизвестно`.
+* Наставник: [Карина Карапетян](https://htmlacademy.ru/profile/karinaweb).
 
 ---
 
