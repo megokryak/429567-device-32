@@ -12,23 +12,32 @@
         </a>
         <form action="#" class="page-search" method="GET">
           <label class="visually-hidden" for="page-search-input">Поиск по сайту</label>
-          <input class="page-search-input" type="text" name="page-search" placeholder="Поиск по сайту">
-          <button class="page-search-button visually-hidden" type="submit">Найти</button>
+          <input class="page-search-input" id="page-search-input" type="text" name="page-search" placeholder="Поиск по сайту">
+          <button class="page-search-button" type="submit">Найти</button>
         </form>
-        <div class="submenu-list">
-          <div class="submenu-item">
-            <a class="submenu-link" href="#">Войти</a>
-          </div>
-          <div class="submenu-item">
-            <a class="submenu-link" href="#">Сравнить</a>
-          </div>
-          <div class="submenu-item">
-            <a class="submenu-link" href="#">Корзина</a>
-          </div>
-        </div>
+        <a class="submenu-link" href="#">Войти</a>
+        <a class="submenu-link" href="#">Сравнить</a>
+        <a class="submenu-link" href="#">Корзина</a>
         <ul class="page-navigation-list">
           <li class="page-navigation-item">
             <a class="page-navigation-link" href="#">Каталог товаров</a>
+            <ul class="submenu">
+              <li class="submenu-item">
+                <a class="submenu-link">Виртуальная реальность</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link">Моноподы для cелфи</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link">Экшн-камеры</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link">Фитнес-браслеты</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link">Умные часы</a>
+              </li>
+            </ul>
           </li>
           <li class="page-navigation-item">
             <a class="page-navigation-link" href="#">Доставка</a>
@@ -39,15 +48,18 @@
           <li class="page-navigation-item">
             <a class="page-navigation-link" href="#">Контакты</a>
           </li>
+          <li class="page-navigation-item">
+            <a class="page-navigation-link" href="#">Квадрокоптеры</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main class="main-page">
       <h1 class="visually-hidden">Device - магазин лучших квадракоптеров в Москве</h1>
       <section class="favorite">
+      <h2 class="visually-hidden">Товары месяца</h2>
         <ul class="slider-list">
           <li class="slider-item">
-            <h2 class="visually-hidden">Товары месяца</h2>
             <img class="slider-img" src="" alt="Квадракопте нового поколения">
             <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
             <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -60,6 +72,38 @@
               <tr class="specifications-line">
                 <td class="specifications-colum">800 м</td>
                 <td class="specifications-colum">50 м</td>
+              </tr>
+            </table>
+          </li>
+          <li class="slider-item">
+            <img class="slider-img" src="" alt="Квадракопте нового поколения">
+            <h3 class="slider-title">Худеем правильно!</h3>
+            <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="slider-link" href="#">Подробнее</a>
+            <table class="specifications">
+              <tr class="specifications-line">
+                <td class="specifications-colum">Без подзарядки</td>
+              </tr>
+              <tr class="specifications-line">
+                <td class="specifications-colum">48 часов</td>
+              </tr>
+            </table>
+          </li>
+          <li class="slider-item">
+            <img class="slider-img" src="" alt="Квадракопте нового поколения">
+            <h3 class="slider-title">Делай селфи, как Бен Стиллер!</h3>
+            <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+            <a class="slider-link" href="#">Подробнее</a>
+            <table class="specifications">
+              <tr class="specifications-line">
+                <td class="specifications-colum">Длина палки</td>
+                <td class="specifications-colum">Вес палки</td>
+                <td class="specifications-colum">Материал</td>
+              </tr>
+              <tr class="specifications-line">
+                <td class="specifications-colum">8,5 м</td>
+                <td class="specifications-colum">5 кг</td>
+                <td class="specifications-colum">Карбон</td>
               </tr>
             </table>
           </li>
@@ -149,8 +193,18 @@
           </li>
         </ul>
         <ul class="service-slider-description">
-          <h3 class="service-slider-title">Доставка</h3>
-          <p class="service-slider-article">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <li class="service-slider-description-item">
+            <h3 class="service-slider-title">Доставка</h3>
+            <p class="service-slider-article">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </li>
+          <li class="service-slider-description-item">
+            <h3 class="service-slider-title">Гарантия</h3>
+            <p class="service-slider-article">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </li>
+          <li class="service-slider-description-item">
+            <h3 class="service-slider-title">Кредит</h3>
+            <p class="service-slider-article">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+          </li>
         </ul>
       </section>
       <section class="about-company">
@@ -226,9 +280,9 @@
         </li>
       </ul>
       <p class="footer-tel">
-        <a class="footer-phone" href="tel:Тел.: +78128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="footer-phone" href="tel:Тел.:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </p>
-      <img class="footer-img" src="" alt="Логотип htmlacademy.">
+      <a href="https://up.htmlacademy.ru/profession/frontender/12" class="footer-link"><img class="footer-img" src="" alt="Логотип htmlacademy."></a>
     </footer>
   </body>
 </html>
