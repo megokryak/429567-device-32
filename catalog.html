@@ -65,14 +65,14 @@
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог товаров</a>
+            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Моноподы для селфи</a>
+            <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
           </li>
         </ul>
       </header>
-      <section class="catalog-products">
+      <section class="filter-products">
         <h2 class="filter-title">Фильтр:</h2>
         <form class="filter" action="https://echo.htmlacademy.ru/" method="GET">
           <fieldset class="filter-group">
@@ -155,28 +155,31 @@
           </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>
+      </section>
 
-        <form class="sorting-type">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control" id="sorting" name="sorting">
-            <option value="popular">Сначала популярное</option>
-          </select>
-          <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-        </form>
+      <section class="sort-products">
+        <h2 class="sort-products-title">Сортировать</h2>
+        <ul class="sorting-type">
+          <li class="select-control">
+            <a href="#" class="select-control-link">Сначала популярное</a>
+          </li>
+        </ul>
         <a href="#" class="button-top">
           <span class="visually-hidden">По возрастанию</span>
         </a>
-        <a href="#" class="button-вщцт">
+        <a href="#" class="button-down">
           <span class="visually-hidden">Показать убыванию</span>
         </a>
+      </section>
 
+      <section class="products">
         <div class="product-card">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="" alt="Селфи-палка для любителей.">
           </a>
-          <a href="#" class="product-card-link-title">
-            <h3 class="product-card-title">Любительская селфи-палка</h3>
-          </a>
+          <h3 class="product-card-title">
+            <a href="#" class="product-card-link-title">Любительская селфи-палка</a>
+          </h3>
           <b class="product-card-price">500 ₽</b>
           <a href="#" class="product-card-button">Подробнее</a>
         </div>
@@ -184,9 +187,9 @@
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="" alt="Селфи-палка для профи.">
           </a>
-          <a href="#" class="product-card-link-title">
-            <h3 class="product-card-title">Профессиональная селфи-палка </h3>
-          </a>
+          <h3 class="product-card-title">
+            <a href="#" class="product-card-link-title">Профессиональная селфи-палка</a>
+          </h3>
           <b class="product-card-price">1500 ₽</b>
           <a href="#" class="product-card-button">Подробнее</a>
         </div>
@@ -194,9 +197,9 @@
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="" alt="Селфи-палка для любителей покупаться.">
           </a>
-          <a href="#" class="product-card-link-title">
-            <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
-          </a>
+          <h3 class="product-card-title">
+            <a href="#" class="product-card-link-title">Непотопляемая селфи-палка</a>
+          </h3>
           <b class="product-card-price">2500 ₽</b>
           <a href="#" class="product-card-button">Подробнее</a>
         </div>
@@ -204,9 +207,9 @@
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="" alt="Селфи-палка Follow me.">
           </a>
-          <a href="#" class="product-card-link-title">
-            <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
-          </a>
+            <h3 class="product-card-title">
+              <a href="#" class="product-card-link-title">Селфи-палка «Следуй за мной»</a>
+            </h3>
           <b class="product-card-price">4900 ₽</b>
           <a href="#" class="product-card-button">Подробнее</a>
         </div>
