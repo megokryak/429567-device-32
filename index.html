@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
         <a href="" class="logo">
-          <img src="" alt="Device логотип магазина.">
+          <img src="img/device.svg" width="145" height="36" alt="Device логотип магазина.">
         </a>
         <form action="#" class="page-search" method="GET">
           <label class="visually-hidden" for="page-search-input">Поиск по сайту</label>
@@ -22,7 +23,7 @@
         </div>
         <ul class="page-navigation-list">
           <li class="page-navigation-item">
-            <a class="page-navigation-link" href="#">Каталог товаров</a>
+            <a class="page-navigation-link page-navigation-link-main" href="#">Каталог товаров</a>
             <ul class="submenu">
               <li class="submenu-item">
                 <a class="submenu-link">Виртуальная реальность</a>
@@ -62,7 +63,7 @@
       <h2 class="visually-hidden">Товары месяца</h2>
         <ul class="slider-list">
           <li class="slider-item">
-            <img class="slider-img" src="" alt="Квадракопте нового поколения">
+            <img class="slider-img" src="img/best/quadrocopter.jpg" width="560" height="560" alt="Квадракопте нового поколения">
             <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
             <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="slider-link" href="#">Подробнее</a>
@@ -78,7 +79,7 @@
             </table>
           </li>
           <li class="slider-item">
-            <img class="slider-img" src="" alt="Квадракопте нового поколения">
+            <img class="slider-img" src="img/best/fitness-bracelet.jpg" width="560" height="560" alt="Квадракопте нового поколения">
             <h3 class="slider-title">Худеем правильно!</h3>
             <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="slider-link" href="#">Подробнее</a>
@@ -92,7 +93,7 @@
             </table>
           </li>
           <li class="slider-item">
-            <img class="slider-img" src="" alt="Квадракопте нового поколения">
+            <img class="slider-img" src="img/best/selfie.jpg" width="560" height="560" alt="Квадракопте нового поколения">
             <h3 class="slider-title">Делай селфи, как Бен Стиллер!</h3>
             <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
             <a class="slider-link" href="#">Подробнее</a>
@@ -145,37 +146,37 @@
         <ul class="category-list">
           <li class="category-item">
             <a class="category-link" href="">
-              <img src="" class="category-img" alt="Очки вируальной реальности.">
+              <img src="img/category/category-1.png" width="160" height="160" class="category-img" alt="Очки вируальной реальности.">
               <span class="category-name">Виртуальная реальность</span>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="">
-              <img src="" class="category-img" alt="Селфи палки.">
+              <img src="img/category/category-2.png" width="160" height="160" class="category-img" alt="Селфи палки.">
               <span class="category-name">Моноподы для селфи</span>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="">
-              <img src="" class="category-img" alt="Экшен-камеры для съемки.">
+              <img src="img/category/category-3.png" width="160" height="160" class="category-img" alt="Экшен-камеры для съемки.">
               <span class="category-name">Экшн-камеры</span>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="">
-              <img src="" class="category-img" alt="Браслеты для спорта.">
+              <img src="img/category/category-4.png" width="160" height="160" class="category-img" alt="Браслеты для спорта.">
               <span class="category-name">Фитнес-браслеты</span>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="">
-              <img src="" class="category-img" alt="Спортивные часы.">
+              <img src="img/category/category-5.png" width="160" height="160" class="category-img" alt="Спортивные часы.">
               <span class="category-name">Умные часы</span>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="">
-              <img src="" class="category-img" alt="Съемка на высоте - квадрокомптер.">
+              <img src="img/category/category-6.png" width="160" height="160" class="category-img" alt="Съемка на высоте - квадрокомптер.">
               <span class="category-name">Квадрокоптеры</span>
             </a>
           </li>
@@ -198,20 +199,23 @@
           <li class="service-slider-description-item">
             <h3 class="service-slider-title">Доставка</h3>
             <p class="service-slider-article">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <img class="service-slider-img" src="img/service/delivery.png" width="260" height="240">
           </li>
           <li class="service-slider-description-item">
             <h3 class="service-slider-title">Гарантия</h3>
             <p class="service-slider-article">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            <img class="service-slider-img" src="img/service/warranty.png" width="260" height="240">
           </li>
           <li class="service-slider-description-item">
             <h3 class="service-slider-title">Кредит</h3>
             <p class="service-slider-article">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+            <img class="service-slider-img" src="img/service/credit.png" width="260" height="240">
           </li>
         </ul>
       </section>
       <section class="about-company">
         <h2 class="visually-hidden">Про компанию</h2>
-        <a class="abot-company-link" href="#">Доставим редкий товар под заказ</a>
+        <a class="about-company-link" href="#">Доставим редкий товар под заказ</a>
         <section class="about">
           <h2 class="about">О нас</h2>
           <p class="about-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
@@ -251,7 +255,7 @@
     </main>
     <footer class="footer">
       <a class="footer-logo-link" href="#">
-        <img class="footer-logo" src="" alt="Логотип Device футер">
+        <img class="footer-logo" src="img/logo-footer.svg" width="145" height="36" alt="Логотип Device футер">
       </a>
       <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <ul class="footer-navigation-list">
@@ -284,7 +288,7 @@
       <p class="footer-tel">
         <a class="footer-phone" href="tel:Тел.:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </p>
-      <a href="https://htmlacademy.ru/" class="footer-link"><img class="footer-img" src="" alt="Логотип htmlacademy."></a>
+      <a href="https://htmlacademy.ru/" class="footer-link"><img class="footer-img" src="img/htmlacademy.svg" alt="Логотип htmlacademy."></a>
     </footer>
   </body>
 </html>
