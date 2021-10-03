@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a href="" class="logo">
+        <a class="logo" href="">
           <img src="img/device.svg" width="145" height="36" alt="Device логотип магазина.">
         </a>
-        <form action="#" class="page-search" method="GET">
+        <form class="page-search" action="#" method="GET">
           <label class="visually-hidden" for="page-search-input">Поиск по сайту</label>
           <input class="page-search-input" id="page-search-input" type="text" name="page-search" placeholder="Поиск по сайту">
           <button class="page-search-button" type="submit">Найти</button>
@@ -26,19 +26,19 @@
             <a class="page-navigation-link page-navigation-link-main" href="#">Каталог товаров</a>
             <ul class="submenu">
               <li class="submenu-item">
-                <a class="submenu-link">Виртуальная реальность</a>
+                <a class="submenu-link" href="#">Виртуальная реальность</a>
               </li>
               <li class="submenu-item">
-                <a class="submenu-link">Моноподы для cелфи</a>
+                <a class="submenu-link" href="#">Моноподы для cелфи</a>
               </li>
               <li class="submenu-item">
-                <a class="submenu-link">Экшн-камеры</a>
+                <a class="submenu-link" href="#">Экшн-камеры</a>
               </li>
               <li class="submenu-item">
-                <a class="submenu-link">Фитнес-браслеты</a>
+                <a class="submenu-link" href="#">Фитнес-браслеты</a>
               </li>
               <li class="submenu-item">
-                <a class="submenu-link">Умные часы</a>
+                <a class="submenu-link" href="#">Умные часы</a>
               </li>
             </ul>
           </li>
@@ -159,19 +159,21 @@
 
       <section class="sort-products">
         <h2 class="sort-products-title">Сортировать</h2>
-        <a href="#" class="select-control-link">Сначала популярное</a>
-        <ul class="sorting-type">
-          <li class="select-control">
-            <a href="#" class="select-control-link">Сначала популярное</a>
-          </li>
-          <li class="select-control">
-            <a href="#" class="select-control-link">Теперь не очень популярное</a>
-          </li>
-        </ul>
-        <a href="#" class="button-top">
+        <div class="sort-products-wrapper">
+          <a class="select-control-link" href="#">Сначала популярное</a>
+          <ul class="sorting-type">
+            <li class="select-control">
+              <a class="select-control-link" href="#">Сначала популярное</a>
+            </li>
+            <li class="select-control">
+              <a class="select-control-link" href="#">Теперь не очень популярное</a>
+            </li>
+          </ul>
+        </div>
+        <a class="button-top" href="#">
           <span class="visually-hidden">По возрастанию</span>
         </a>
-        <a href="#" class="button-down">
+        <a class="button-down" href="#">
           <span class="visually-hidden">Показать убыванию</span>
         </a>
       </section>
@@ -183,50 +185,50 @@
             <img class="product-card-image" src="img/products/product-1.jpg" width="360" height="380" alt="Селфи-палка для любителей.">
           </a>
           <h3 class="product-card-title">
-            <a href="#" class="product-card-link-title">Любительская селфи-палка</a>
+            <a class="product-card-link-title" href="#">Любительская селфи-палка</a>
           </h3>
           <b class="product-card-price">500 ₽</b>
-          <a href="#" class="product-card-button">Подробнее</a>
+          <a class="product-card-button" href="#">Подробнее</a>
         </div>
         <div class="product-card">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="img/products/product-2.jpg" width="360" height="380" alt="Селфи-палка для профи.">
           </a>
           <h3 class="product-card-title">
-            <a href="#" class="product-card-link-title">Профессиональная селфи-палка</a>
+            <a class="product-card-link-title" href="#">Профессиональная селфи-палка</a>
           </h3>
           <b class="product-card-price">1500 ₽</b>
-          <a href="#" class="product-card-button">Подробнее</a>
+          <a class="product-card-button" href="#">Подробнее</a>
         </div>
         <div class="product-card">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="img/products/product-3.jpg" width="360" height="380" alt="Селфи-палка для любителей покупаться.">
           </a>
           <h3 class="product-card-title">
-            <a href="#" class="product-card-link-title">Непотопляемая селфи-палка</a>
+            <a class="product-card-link-title" href="#">Непотопляемая селфи-палка</a>
           </h3>
           <b class="product-card-price">2500 ₽</b>
-          <a href="#" class="product-card-button">Подробнее</a>
+          <a class="product-card-button" href="#">Подробнее</a>
         </div>
         <div class="product-card">
           <a class="product-card-link" href="#">
             <img class="product-card-image" src="img/products/product-4.jpg" width="360" height="380" alt="Селфи-палка Follow me.">
           </a>
             <h3 class="product-card-title">
-              <a href="#" class="product-card-link-title">Селфи-палка «Следуй за мной»</a>
+              <a class="product-card-link-title" href="#">Селфи-палка «Следуй за мной»</a>
             </h3>
           <b class="product-card-price">4900 ₽</b>
-          <a href="#" class="product-card-button">Подробнее</a>
+          <a class="product-card-button" href="#">Подробнее</a>
         </div>
         <button class="button pagination-show-more" type="button">Загрузить ещё</button>
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">
+            <a class="pagination-link pagination-prev pagination-disabled" href="#">
               <span class="visually-hidden">Назад</span>
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+            <a class="pagination-link pagination-current" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -268,16 +270,17 @@
       </ul>
       <ul class="footer-social-list">
         <li class="footer-social-item">
-          <a href="https://www.facebook.com/htmlacademy" class="footer-social-link">
+          <a class="footer-social-link" href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Facebook</span>
           </a>
-        </li><li class="footer-social-item">
-          <a href="https://www.instagram.com/htmlacademy/" class="footer-social-link">
+        </li>
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://www.instagram.com/htmlacademy/">
             <span class="visually-hidden">Instagramm</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a href="https://twitter.com/htmlacademy_ru" class="footer-social-link">
+          <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">Tvitter</span>
           </a>
         </li>
@@ -285,7 +288,9 @@
       <p class="footer-tel">
         <a class="footer-phone" href="tel:Тел.:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </p>
-      <a href="https://htmlacademy.ru/" class="footer-link"><img class="footer-img" src="img/htmlacademy.svg" alt="Логотип htmlacademy."></a>
+      <a href="https://htmlacademy.ru/" class="footer-link">
+        <img class="footer-img" src="img/htmlacademy.svg" alt="Логотип htmlacademy.">
+      </a>
     </footer>
   </body>
 </html>
