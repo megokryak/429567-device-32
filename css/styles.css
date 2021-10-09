@@ -37,6 +37,7 @@ html {
 body {
   font-family: "Rubik", sans-serif ;
   font-size: 18px;
+  font-weight: 400;
   line-height: 30px;
   color: #444444;
   background-color: #ffffff;
@@ -85,6 +86,7 @@ body {
   width: 16px;
   height: 16px;
   background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
 }
 
 .submenu-link {
@@ -133,6 +135,7 @@ body {
   width: 16px;
   height: 16px;
   background-image: url("../img/plus-1.svg");
+  background-repeat: no-repeat;
 }
 
 .auth {
@@ -147,6 +150,7 @@ body {
   width: 13px;
   height: 12px;
   background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
 }
 
 .auth .submenu-link:nth-child(2)::before {
@@ -155,6 +159,7 @@ body {
   width: 10px;
   height: 12px;
   background-image: url("../img/compare.svg");
+  background-repeat: no-repeat;
 }
 
 .auth .submenu-link:last-child::before {
@@ -163,6 +168,7 @@ body {
   width: 16px;
   height: 14px;
   background-image: url("../img/cart.svg");
+  background-repeat: no-repeat;
 }
 
 /*header*/
@@ -206,6 +212,7 @@ body {
 
 .slider-prev {
   background-image: url("../img/best/left-tall-arrow.svg");
+  background-repeat: no-repeat;
   width: 20px;
   height: 60px;
 }
@@ -213,6 +220,7 @@ body {
 
 .slider-next {
   background-image: url("../img/best/right-tall-arrow.svg");
+  background-repeat: no-repeat;
   width: 20px;
   height: 60px;
 }
@@ -328,7 +336,9 @@ body {
   display: block;
   width: 125px;
   height: 100px;
-  background: url("../img/company/delivery.svg") no-repeat #FFE17F;
+  background: url("../img/company/delivery.svg");
+  background-repeat: no-repeat;
+  background-color: #FFE17F;
   background-position: center;
 }
 
@@ -426,6 +436,7 @@ body {
   width: 14px;
   height: 14px;
   background-image: url("../img/tick-big.svg");
+  background-repeat: no-repeat;
 }
 
 /*Subscribe*/
@@ -487,15 +498,18 @@ body {
 }
 
 .footer-social-item:first-child .footer-social-link {
-  background: url("../img/facebook.svg") no-repeat;
+  background: url("../img/facebook.svg");
+  background-repeat: no-repeat;
 }
 
 .footer-social-item:nth-child(2) .footer-social-link {
-  background: url("../img/instagram.svg") no-repeat;
+  background: url("../img/instagram.svg");
+  background-repeat: no-repeat;
 }
 
 .footer-social-item:last-child .footer-social-link {
-  background: url("../img/twitter.svg") no-repeat;
+  background: url("../img/twitter.svg");
+  background-repeat: no-repeat;
 }
 
 .footer-phone {
@@ -505,7 +519,6 @@ body {
 
 }
 /*footer*/
-
 
 /*page catalog*/
 /*header*/
