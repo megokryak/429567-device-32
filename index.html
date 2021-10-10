@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <nav class="navigation">
         <a class="logo" href="">
           <img src="img/device.svg" width="145" height="36" alt="Device логотип магазина.">
@@ -21,6 +21,35 @@
             <a class="submenu-link" href="#">Войти</a>
             <a class="submenu-link" href="#">Сравнить</a>
             <a class="submenu-link" href="#">Корзина</a>
+            <div class="basket">
+              <ul class="basket-list">
+                <li class="basket-item">
+                  <a  class="basket-item-link" href="#">
+                    <img class="basket-item-img" src="img/products/product-1-mini.jpg" alt="Любительская селфи палочка" width="41" height="43">
+                    <p class="basket-item-name">Любительская селфи-палка</p>
+                    <button class="basket-item-del">Удалить из корзины</button>
+                  </a>
+                </li>
+                <li class="basket-item">
+                  <a  class="basket-item-link" href="#">
+                    <img class="basket-item-img" src="img/products/product-2-mini.jpg" alt="Профессиональная селфи палочка" width="41" height="43">
+                    <p class="basket-item-name">Профессиональная селфи-палка</p>
+                    <button class="basket-item-del">Удалить из корзины</button>
+                  </a>
+                </li>
+              </ul>
+              <table class="basket-total total">
+                <tr class="total-row">
+                  <td class="total-col">Товаров:</td>
+                  <td class="total-col">2</td>
+                </tr>
+                <tr class="total-row">
+                  <td class="total-col">Сумма:</td>
+                  <td class="total-col">2000 Р</td>
+                </tr>
+              </table>
+              <a class="basket-open" href="#">Открыть корзину</a>
+            </div>
           </div>
         </div>
         <ul class="page-navigation-list">
@@ -58,7 +87,7 @@
     </header>
     <main class="main-page main-content">
       <h1 class="visually-hidden">Device - магазин лучших квадракоптеров в Москве</h1>
-      <section class="favorite">
+      <section class="favorite container">
       <h2 class="visually-hidden">Товары месяца</h2>
         <ul class="slider-list">
           <li class="slider-item">
@@ -146,7 +175,7 @@
           </li>
         </ul>
       </section>
-      <section class="category">
+      <section class="category container">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="category-list">
           <li class="category-item">
@@ -188,7 +217,8 @@
         </ul>
       </section>
       <section class="service">
-        <div class="service-wrapper">
+        <div class="container">
+        <div class="service-wrapper container">
           <h2 class="visually-hidden">Услуги</h2>
           <ul class="service-list">
             <li class="service-item">
@@ -217,8 +247,7 @@
           </ul>
         </div>
       </section>
-      <section class="about-company">
-        <h2 class="visually-hidden">Про компанию</h2>
+      <div class="about-company container">
         <a class="about-company-link" href="#">Доставим редкий товар под заказ</a>
         <div class="about-company-wrapper">
           <section class="about">
@@ -247,9 +276,9 @@
             <a class="contacts-link" href="#">Напишите нам</a>
           </section>
         </div>
-      </section>
+      </div>
       <section class="subscribe">
-        <div class="subscribe-wrapper">
+        <div class="subscribe-wrapper container">
           <div class="subscribe-inner">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subscribe-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
@@ -266,7 +295,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer-wrapper">
+      <div class="footer-wrapper container">
         <div class="footer-wrapper-address">
           <a class="footer-logo-link" href="#">
             <img class="footer-logo" src="img/logo-footer.svg" width="145" height="36" alt="Логотип Device футер">
