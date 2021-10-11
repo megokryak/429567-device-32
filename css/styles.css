@@ -556,9 +556,21 @@ body {
 /*header*/
 
 /*filter*/
-.filter-products {
+.main-inner-wrapper{
   color: #000000;
-  background-color: #dcdcdc;
+  background-color: #EBEBEB;
+  display: flex;
+  justify-content: center;
+}
+
+.products-wrapper {
+  display: flex;
+  width: 830px;
+  flex-direction: column;
+}
+
+.filter-products {
+  width: 330px;
 }
 
 .filter-products-title, .sort-products-title {
@@ -567,6 +579,23 @@ body {
   line-height: 19px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.filter-products-title {
+  color: #000000;
+  background-color: #DCDCDC;
+  position: relative;
+  z-index: 1;
+}
+
+.filter-products-title::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  right: 0;
+  background-color: #dcdcdc;
+  z-index: -1;
 }
 
 .filter {
@@ -609,6 +638,7 @@ body {
 .sort-products {
   color: #000000;
   background-color: #EBEBEB;
+  display: flex;
 }
 
 
@@ -621,6 +651,33 @@ body {
 /*Sort*/
 
 /*products*/
+
+.products{
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.products::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.product-card {
+  width: 360px;
+}
+
 .product-card-button {
   font-family: "Raleway", sans-serif;
   line-height: 21px;
@@ -641,6 +698,12 @@ body {
   font-weight: 400;
 }
 
+.pagination {
+  margin: 0 auto;
+  display: flex;
+  width: 760px;
+}
+
 .pagination-item {
   list-style-type: none;
 }
@@ -651,6 +714,7 @@ body {
   line-height: 19px;
   color: #000000;
   text-transform: uppercase;
+  width: 760px;
 }
 
 .pagination-link {
