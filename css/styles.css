@@ -52,20 +52,16 @@ body {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
 }
 
-.page-header {
-  color: #000000;
-  background-color: #FFE17F;
-
-}
-
 /*header*/
 .navigation {
+  color: #000000;
+  background-color: #FFE17F;
   padding: 0 60px 0 60px;
 }
 
@@ -123,7 +119,7 @@ body {
   color: #ffffff;
 }
 
-.total tbody {
+.total {
   display: flex;
 }
 
@@ -556,6 +552,10 @@ body {
 /*header*/
 
 /*filter*/
+.main-inner {
+  overflow: hidden;
+}
+
 .main-inner-wrapper{
   color: #000000;
   background-color: #EBEBEB;
