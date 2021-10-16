@@ -18,9 +18,9 @@
             <button class="page-search-button" type="submit">Найти</button>
           </form>
           <div class="auth">
-            <a class="submenu-link" href="#">Войти</a>
-            <a class="submenu-link" href="#">Сравнить</a>
-            <a class="submenu-link" href="#">Корзина</a>
+            <a class="submenu-link enter" href="#">Войти</a>
+            <a class="submenu-link save" href="#">Сравнить</a>
+            <a class="submenu-link basket-link" href="#">Корзина</a>
             <div class="basket">
               <ul class="basket-list">
                 <li class="basket-item">
@@ -84,56 +84,57 @@
       <section class="favorite container">
       <h2 class="visually-hidden">Товары месяца</h2>
         <ul class="slider-list">
-          <li class="slider-item">
-            <img class="slider-img" src="img/best/quadrocopter.jpg" width="560" height="560" alt="Квадракопте нового поколения">
+          <li class="slider-item slider-active">
+            <img class="slider-img" src="img/best/quadrocopter.png" width="560" height="560" alt="Квадракопте нового поколения">
             <div class="slider-item-wrapper">
               <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
               <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <a class="slider-link" href="#">Подробнее</a>
               <table class="specifications">
-                <tr class="specifications-line">
-                  <td class="specifications-colum">Дальность полета</td>
-                  <td class="specifications-colum">Радиус поражения</td>
-                </tr>
-                <tr class="specifications-line">
+                <tr class="specifications-line specifications-data">
                   <td class="specifications-colum">800 м</td>
                   <td class="specifications-colum">50 м</td>
+                </tr>
+                <tr class="specifications-line specifications-name">
+                  <td class="specifications-colum">Дальность полета</td>
+                  <td class="specifications-colum">Радиус поражения</td>
                 </tr>
               </table>
             </div>
           </li>
           <li class="slider-item">
-            <img class="slider-img" src="img/best/fitness-bracelet.jpg" width="560" height="560" alt="Квадракопте нового поколения">
+            <img class="slider-img" src="img/best/fitness-bracelet.png" width="560" height="560" alt="Квадракопте нового поколения">
             <div class="slider-item-wrapper">
               <h3 class="slider-title">Худеем правильно!</h3>
               <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a class="slider-link" href="#">Подробнее</a>
               <table class="specifications">
-                <tr class="specifications-line">
-                  <td class="specifications-colum">Без подзарядки</td>
-                </tr>
-                <tr class="specifications-line">
+                <tr class="specifications-line specifications-data">
                   <td class="specifications-colum">48 часов</td>
                 </tr>
+                <tr class="specifications-line specifications-name">
+                  <td class="specifications-colum">Без подзарядки</td>
+                </tr>
+
               </table>
             </div>
           </li>
           <li class="slider-item">
-            <img class="slider-img" src="img/best/selfie.jpg" width="560" height="560" alt="Квадракопте нового поколения">
+            <img class="slider-img" src="img/best/selfie.png" width="560" height="560" alt="Квадракопте нового поколения">
             <div class="slider-item-wrapper">
               <h3 class="slider-title">Делай селфи, как Бен Стиллер!</h3>
               <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               <a class="slider-link" href="#">Подробнее</a>
               <table class="specifications">
-                <tr class="specifications-line">
-                  <td class="specifications-colum">Длина палки</td>
-                  <td class="specifications-colum">Вес палки</td>
-                  <td class="specifications-colum">Материал</td>
-                </tr>
-                <tr class="specifications-line">
+                <tr class="specifications-line specifications-data">
                   <td class="specifications-colum">8,5 м</td>
                   <td class="specifications-colum">5 кг</td>
                   <td class="specifications-colum">Карбон</td>
+                </tr>
+                <tr class="specifications-line specifications-name">
+                  <td class="specifications-colum">Длина палки</td>
+                  <td class="specifications-colum">Вес палки</td>
+                  <td class="specifications-colum">Материал</td>
                 </tr>
               </table>
             </div>
@@ -174,37 +175,49 @@
         <ul class="category-list">
           <li class="category-item">
             <a class="category-link" href="">
-              <img class="category-img" src="img/category/popular-1.svg" width="97" height="55" alt="Очки вируальной реальности.">
+              <div class="category-img-wrapper">
+                <img class="category-img" src="img/category/popular-1.svg" width="97" height="55" alt="Очки вируальной реальности.">
+              </div>
               <span class="category-name">Виртуальная реальность</span>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="">
-              <img class="category-img" src="img/category/popular-2.svg" width="86" height="117" alt="Селфи палки.">
+              <div class="category-img-wrapper">
+                <img class="category-img" src="img/category/popular-2.svg" width="86" height="117" alt="Селфи палки.">
+               </div>
               <span class="category-name">Моноподы для селфи</span>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="">
-              <img class="category-img" src="img/category/popular-3.svg" width="71" height="87" alt="Экшен-камеры для съемки.">
+              <div class="category-img-wrapper">
+                <img class="category-img" src="img/category/popular-3.svg" width="71" height="87" alt="Экшен-камеры для съемки.">
+              </div>
               <span class="category-name">Экшн-камеры</span>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="">
-              <img class="category-img" src="img/category/popular-4.svg" width="107" height="65" alt="Браслеты для спорта.">
+              <div class="category-img-wrapper">
+                <img class="category-img" src="img/category/popular-4.svg" width="107" height="65" alt="Браслеты для спорта.">
+              </div>
               <span class="category-name">Фитнес-браслеты</span>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="">
-              <img class="category-img" src="img/category/popular-5.svg" width="56" height="98" alt="Спортивные часы.">
+              <div class="category-img-wrapper">
+                <img class="category-img" src="img/category/popular-5.svg" width="56" height="98" alt="Спортивные часы.">
+              </div>
               <span class="category-name">Умные часы</span>
             </a>
           </li>
           <li class="category-item">
             <a class="category-link" href="">
-              <img class="category-img" src="img/category/popular-6.svg" width="132" height="69" alt="Съемка на высоте - квадрокомптер.">
+              <div class="category-img-wrapper">
+                <img class="category-img" src="img/category/popular-6.svg" width="132" height="69" alt="Съемка на высоте - квадрокомптер.">
+              </div>
               <span class="category-name">Квадрокоптеры</span>
             </a>
           </li>
@@ -226,7 +239,7 @@
             </li>
           </ul>
           <ul class="service-slider-description">
-            <li class="service-slider-description-item">
+            <li class="service-slider-description-item service-slider-description-item-active">
               <h3 class="service-slider-title">Доставка</h3>
               <p class="service-slider-article">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
@@ -247,6 +260,7 @@
           <section class="about">
             <h2 class="about-title">О нас</h2>
             <p class="about-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+            <p class="about-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
             <ul class="about-transport">
               <li class="about-transport-item">Медовые линии</li>
               <li class="about-transport-item">СДИК</li>
@@ -279,8 +293,10 @@
           </div>
           <div class="form-wrapper">
             <form class="subscribe-form" action="#" method="GET">
-              <label class="visually-hidden" for="subscribe-input">Email</label>
-              <input class="subscribe-input" name="email" id="subscribe-input" type="email" placeholder="Ваш email">
+              <div class="subscribe-wrapper-input">
+                <label class="visually-hidden" for="subscribe-input">Email</label>
+                <input class="subscribe-input" name="email" id="subscribe-input" type="email" placeholder="Ваш email">
+              </div>
               <button class="subscribe-submit" type="submit" name="subscribe">Подписаться</button>
             </form>
             <span class="subscribe-free">Это бесплатно</span>
