@@ -219,8 +219,7 @@ body {
 }
 
 .enter {
-  width: 220px;
-  margin: 0 35px 0 0;
+  margin: 0 175px 0 0;
 }
 
 .basket-link {
@@ -320,10 +319,6 @@ body {
   background-image: url("../img/best/right-tall-arrow.svg");
   width: 20px;
   height: 60px;
-}
-
-.specifications-line{
-  display: flex;
 }
 
 .specifications-line:first-child {
@@ -449,7 +444,8 @@ body {
 
 /*About company*/
 .about-company {
-  padding: 90px 0 90px 0;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .about-company-wrapper {
@@ -479,7 +475,7 @@ body {
   width: 1035px;
   position: relative;
   padding: 38.5px 0;
-  margin: 0 auto 97px auto;
+  margin: 0 0 97px auto;
 }
 
 .about-company-link::before {
@@ -487,10 +483,12 @@ body {
   display: inline-block;
   width: 125px;
   height: 100px;
-  background: url("../img/company/delivery.svg") no-repeat #FFE17F;
+  background: url("../img/company/delivery.svg");
+  background-repeat: no-repeat;
+  background-color:  #FFE17F;
   background-position: center;
   position: absolute;
-  left: -100px;
+  left: -125px;
 }
 
 .about-title, .contacts-title {
