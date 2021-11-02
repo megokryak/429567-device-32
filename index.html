@@ -15,7 +15,7 @@
         <div class="navigation-wrapper">
           <form class="page-search" action="#" method="GET">
             <label class="visually-hidden" for="page-search-input">Поиск по сайту</label>
-            <input class="page-search-input" id="page-search-input" type="text" name="page-search" placeholder="Поиск по сайту">
+            <input class="page-search-input" id="page-search-input" type="text" name="page-search" placeholder="Поиск по сайту" autocomplete="off">
             <button class="page-search-button" type="submit">Найти</button>
           </form>
           <div class="auth">
@@ -49,7 +49,7 @@
         </div>
         <ul class="page-navigation-list">
           <li class="page-navigation-item">
-            <a class="page-navigation-link page-navigation-link-main" href="#">Каталог товаров</a>
+            <a class="page-navigation-link page-navigation-link-main" href="#" tabindex="0">Каталог товаров</a>
             <div class="submenu-wrapper">
               <ul class="submenu">
                 <li class="submenu-item">
@@ -319,7 +319,7 @@
             <form class="subscribe-form" action="#" method="GET">
               <div class="subscribe-wrapper-input">
                 <label class="visually-hidden" for="subscribe-input">Email</label>
-                <input class="subscribe-input" name="email" id="subscribe-input" type="email" placeholder="Ваш email">
+                <input class="subscribe-input" name="email" id="subscribe-input" type="email" placeholder="Ваш email">  <!--.subscribe-input-error - класс с ошибкой заполнения формы-->
               </div>
               <button class="subscribe-submit" type="submit" name="subscribe">Подписаться</button>
             </form>
