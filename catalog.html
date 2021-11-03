@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <header class="page-header container">
@@ -14,13 +15,14 @@
         <div class="navigation-wrapper">
           <form class="page-search" action="#" method="GET">
             <label class="visually-hidden" for="page-search-input">Поиск по сайту</label>
-            <input class="page-search-input" id="page-search-input" type="text" name="page-search" placeholder="Поиск по сайту">
+            <input class="page-search-input" id="page-search-input" type="text" name="page-search" placeholder="Поиск по сайту" autocomplete="off">
             <button class="page-search-button" type="submit">Найти</button>
           </form>
           <div class="auth">
-            <a class="submenu-link enter" href="#">Войти</a>
+            <a class="submenu-link login" href="#">Коля Петухов</a>
+            <a class="submenu-link exit" href="#">Выйти</a>
             <a class="submenu-link save" href="#">Сравнить</a>
-            <a class="submenu-link basket-link" href="#">Корзина</a>
+            <a class="submenu-link basket-link basket-link-products" href="#">Корзина</a>
             <div class="basket">
               <ul class="basket-list">
                 <li class="basket-item">
@@ -48,7 +50,7 @@
         </div>
         <ul class="page-navigation-list">
           <li class="page-navigation-item">
-            <a class="page-navigation-link page-navigation-link-main" href="#">Каталог товаров</a>
+            <a class="page-navigation-link page-navigation-link-main" href="#" tabindex="0">Каталог товаров</a>
             <div class="submenu-wrapper">
               <ul class="submenu">
                 <li class="submenu-item">
@@ -136,14 +138,14 @@
             <fieldset class="filter-group">
               <legend class="filter-title">Цвет</legend>
               <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
+                <li class="catalog-filter-item catalog-filter-item-active">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="black">
                     <span class="control-mark"></span>
                     <span class="control-label">Черный</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="catalog-filter-item catalog-filter-item-active">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="white">
                     <span class="control-mark"></span>
@@ -177,14 +179,14 @@
             <fieldset class="filter-group">
               <legend class="filter-title">Bluetooth</legend>
               <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
+                <li class="catalog-filter-radio-item catalog-filter-radio-item-active">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="product-group" value="yes">
                     <span class="control-mark"></span>
                 <span class="control-label">Есть</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="catalog-filter-radio-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="product-group" value="no">
                     <span class="control-mark"></span>
@@ -256,7 +258,7 @@
                 <!-- </div> -->
                 <a class="product-card-button" href="#">Подробнее</a>
               </div>
-              <div class="product-card">
+              <div class="product-card product-card-new">
                 <a class="product-card-link" href="#">
                   <img class="product-card-image" src="img/products/product-4.jpg" width="360" height="380" alt="Селфи-палка Follow me.">
                 </a>

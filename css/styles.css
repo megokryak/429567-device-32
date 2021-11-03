@@ -375,7 +375,11 @@ body {
   margin: 0 0 0 auto;
 }
 
-.enter::before {
+.exit {
+  padding-left: 10px;
+}
+
+.enter::before, .login::before {
   content: "";
   display: block;
   position: absolute;
@@ -413,6 +417,23 @@ body {
   height: 14px;
   background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
+}
+
+.basket-link-products::after {
+  content: "2";
+  display: block;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 50%;
+  left: 0;
+  z-index: 10;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  margin: -10px 0 0 0;
 }
 
 .submenu-wrapper {
@@ -1769,6 +1790,11 @@ body {
   position: absolute;
 }
 
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
 
 .catalog-filter-label {
   font-size: 15px;
@@ -1777,9 +1803,96 @@ body {
   opacity: 0.3;
 }
 
-.catalog-filter-item {
+.catalog-filter-item, .catalog-filter-radio-item {
   list-style-type: none;
+  padding: 0 0 0 37px;
+  position: relative;
 }
+
+.catalog-filter-item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  margin: -10px 0 0 0;
+  cursor: pointer;
+}
+
+.catalog-filter-item-active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 3px;
+  margin: -10px 0 0 0;
+  cursor: pointer;
+}
+
+.catalog-filter-item-active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  margin: -4px 0 0 0;
+  width: 10px;
+  height: 10px;
+  background: url("../img/tick.svg");
+  background-repeat: no-repeat;
+}
+
+
+.catalog-filter-radio-item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin: -10px 0 0 0;
+  cursor: pointer;
+}
+
+.catalog-filter-radio-item-active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  margin: -10px 0 0 0;
+  cursor: pointer;
+}
+
+.catalog-filter-radio-item-active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  margin: -4px 0 0 0;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+
 
 .control-label {
   font-size: 16px;
@@ -1788,11 +1901,53 @@ body {
 }
 
 .button {
+  display: block;
+  width: 220px;
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
   line-height: 21px;
+  letter-spacing: 0.2em;
   color: #000000;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 10px;
+  margin: auto 0 70px 0;
+  position: relative;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+  cursor: pointer;
 }
+
+.button::before {
+  content: "";
+  background-color: #ffe17f;
+  display: block;
+  height: calc(100% - 43px);
+  left: 0;
+  right: 0;
+  top: 21px;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.button:focus:before {
+  background-color: #AF4FFF;
+}
+
+
+.button:hover::before {
+  height: 100%;
+  top: 0;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /*filter*/
 
 /*Sort*/
@@ -1874,6 +2029,27 @@ body {
   display: grid;
   grid-template-rows: 180px 20px 180px min-content;
   grid-template-columns: 80px 200px 80px;
+  position: relative;
+}
+
+.product-card-new::before {
+  content: "NEW";
+  display: block;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 56px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  top: 27px;
+  right: 27px;
 }
 
 .product-card-wrapper {
@@ -1888,6 +2064,7 @@ body {
 }
 
 .product-card-image {
+  display: block;
   margin: 0 0 32px 0;
 }
 
@@ -1918,41 +2095,6 @@ body {
   display: block;
 }
 
-.product-card-link:hover + .product-card-title + .product-card-price + .product-card-button::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 6px;
-  height: 8px;
-  background-color: #FFC700;
-  z-index: -1;
-}
-
-
-.product-card-button {
-  display: none;
-  width: 180px;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  line-height: 21px;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
-  grid-column: 2/3;
-  grid-row: 2/3;
-  justify-self: center;
-  z-index: 10;
-  position: relative;
-}
-
-.product-card-button:hover {
-  background-color: #FFC700;
-}
-
-.product-card-button:active {
-  color: rgba(0, 0, 0, 0.3);
-}
 
 .product-card-link-title {
   display: block;
@@ -1962,6 +2104,59 @@ body {
   line-height: 24px;
   text-decoration: none;
 }
+
+.product-card-button {
+  display: none;
+  width: 220px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
+  z-index: 10;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 10px;
+  margin: auto 0 70px 0;
+  position: relative;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.product-card-button::before {
+  content: "";
+  background-color: #ffe17f;
+  display: block;
+  height: calc(100% - 43px);
+  left: 0;
+  right: 0;
+  top: 21px;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.product-card-button:focus:before {
+  background-color: #AF4FFF;
+}
+
+
+.product-card-button:hover::before {
+  height: 100%;
+  top: 0;
+}
+
+.product-card-button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 
 .product-card-price {
   line-height: 24px;
