@@ -119,33 +119,39 @@
           <form class="filter" action="https://echo.htmlacademy.ru/" method="GET">
             <fieldset class="filter-group">
               <legend class="filter-title">Стоимость</legend>
-              <button class="range-toggle toggle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену.</span>
-              </button>
-              <button class="range-toggle toggle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену.</span>
-              </button>
-
-              <label class="catalog-filter-label">
-                от <input class="catalog-filter-input" type="number" name="min-price">
-              </label>
-
-              <label class="catalog-filter-label">
-                до <input class="catalog-filter-input" type="number" name="max-price">
-              </label>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0px; width: 136px">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label"> <!--.catalog-filter-active и .catalog-filter-focus классы изменения состояния-->
+                    от <input class="catalog-filter-input" type="number" name="min-price" value="0"> <!--.catalog-filter-active и .catalog-filter-focus классы изменения состояния-->
+                  </label>
+                  <label class="catalog-filter-label"><!--.catalog-filter-active и .catalog-filter-focus классы изменения состояния-->
+                    до <input class="catalog-filter-input" type="number" name="max-price" value="5000"><!--.catalog-filter-active и .catalog-filter-focus классы изменения состояния-->
+                  </label>
+                </div>
             </fieldset>
 
             <fieldset class="filter-group">
               <legend class="filter-title">Цвет</legend>
               <ul class="catalog-filter-list">
-                <li class="catalog-filter-item catalog-filter-item-active">
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="black">
                     <span class="control-mark"></span>
                     <span class="control-label">Черный</span>
                   </label>
                 </li>
-                <li class="catalog-filter-item catalog-filter-item-active">
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="white">
                     <span class="control-mark"></span>
@@ -179,14 +185,14 @@
             <fieldset class="filter-group">
               <legend class="filter-title">Bluetooth</legend>
               <ul class="catalog-filter-list">
-                <li class="catalog-filter-radio-item catalog-filter-radio-item-active">
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="product-group" value="yes">
                     <span class="control-mark"></span>
                 <span class="control-label">Есть</span>
                   </label>
                 </li>
-                <li class="catalog-filter-radio-item">
+                <li class="catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="product-group" value="no">
                     <span class="control-mark"></span>
@@ -203,7 +209,7 @@
             <h2 class="sort-products-title">Сортировать</h2>
             <div class="sort-products-wrapper">
               <a class="select-control-link" href="#">Сначала популярное</a>
-              <ul class="sorting-type">
+              <ul class="sorting-type sorting-type-open">
                 <li class="select-control">
                   <a class="select-control-link" href="#">Сначала популярное</a>
                 </li>
