@@ -194,7 +194,7 @@ body {
   background-color: #000000;
   display: none;
   position: absolute;
-  top: 40px;
+  top: 45px;
   right: -60px;
   z-index: 1;
   margin: 0;
@@ -482,6 +482,7 @@ body {
 
 .auth {
   display: flex;
+  justify-content: baseline;
   flex-wrap: wrap;
   width: 535px;
   position: relative;
@@ -497,6 +498,10 @@ body {
 
 .exit {
   padding-left: 10px;
+}
+
+.login {
+  max-width: 165px;
 }
 
 .enter::before, .login::before {
@@ -1682,12 +1687,16 @@ body {
 /*page catalog*/
 /*header*/
 
+.inner-header {
+  padding: 37px 0 49px 60px;
+}
+
 .inner-header-title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
-  margin: 37px 0 14px 60px;
+  margin: 0 0 14px 0;
 }
 
 .breadcrumbs {
@@ -1695,7 +1704,7 @@ body {
   line-height: 19px;
   color: #000000;
   opacity: 0.6;
-  margin: 0 0 49px 60px;
+  margin: 0;
   padding: 0;
   display: flex;
 }
@@ -1730,8 +1739,9 @@ body {
   color: inherit;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
-  padding: 0 8px;
+  padding: 0 8px 0 0;
   border: 5px solid transparent;
+  box-sizing: border-box;
 }
 
 .breadcrumbs-link:hover {
@@ -1809,6 +1819,7 @@ body {
 .sorting-type {
   display: none;
   list-style-type: none;
+  background-color: #EBEBEB;
 }
 
 .button-top, .button-down {
