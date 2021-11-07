@@ -214,10 +214,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.basket-open {
-  display: block;
-}
-
 .basket-list {
   margin: 0;
   padding: 20px;
@@ -494,7 +490,6 @@ body {
 
 .auth {
   display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
   width: 535px;
@@ -555,6 +550,10 @@ body {
   height: 14px;
   background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
+}
+
+.basket-link:hover + .basket{
+  display: block;
 }
 
 .basket-link-products::after {
@@ -2430,6 +2429,7 @@ body {
   box-sizing: border-box;
   background-color: #ffffff;
   margin: 0 0 51px 0;
+  cursor: pointer;
 }
 
 .pagination-show-more:focus {
