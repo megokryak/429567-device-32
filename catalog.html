@@ -30,14 +30,14 @@
                     <img class="basket-item-img" src="img/products/product-1-mini.jpg" alt="Любительская селфи палочка" width="41" height="43">
                     <p class="basket-item-name">Любительская селфи-палка</p>
                   </a>
-                  <button class="basket-item-del"><span class = "visually-hidden">Удалить из корзины</span></button>
+                  <button type="button" class="basket-item-del"><span class = "visually-hidden">Удалить из корзины</span></button>
                 </li>
                 <li class="basket-item">
                   <a  class="basket-item-link" href="#">
                     <img class="basket-item-img" src="img/products/product-2-mini.jpg" alt="Профессиональная селфи палочка" width="41" height="43">
                     <p class="basket-item-name">Профессиональная селфи-палка</p>
                   </a>
-                  <button class="basket-item-del"><span class = "visually-hidden">Удалить из корзины</span></button>
+                  <button type="button" class="basket-item-del"><span class = "visually-hidden">Удалить из корзины</span></button>
                 </li>
               </ul>
               <div class="basket-total total">
@@ -50,7 +50,7 @@
         </div>
         <ul class="page-navigation-list">
           <li class="page-navigation-item">
-            <a class="page-navigation-link page-navigation-link-main" href="/catalog.html" tabindex="0">Каталог товаров</a>
+            <a class="page-navigation-link page-navigation-link-main" href="catalog.html" tabindex="0">Каталог товаров</a>
             <div class="submenu-wrapper">
               <ul class="submenu">
                 <li class="submenu-item">
@@ -356,26 +356,41 @@
         </div>
       </div>
     </footer>
-    <div class="modal-container modal-close">
+    <div class="modal-container modal-close"> <!--modal-close класс закрывающий модальное окно-->
       <div class="modal modal-delivery">
-        <h2 class="modal-title">Доставка под заказ</h2>
-        <button class="modal-close-button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+        <div class="modal-title-wrapper">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <button class="modal-close-button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+        </div>
         <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="GET">
-          <label class="modal-delivery-label" >Ваше имя:
-            <input class="modal-delivery-name" type="text" placeholder="Имя фамилия" autocomplete="off">
-          </label>
-          <p class="message message-error">Пожалуйста, представьтесь</p>
-          <label class="modal-delivery-label" >Ваш e-mail:
-            <input class="modal-delivery-email" type="text" placeholder="Введите e-mail" autocomplete="off">
-          </label>
-          <p class="message">Забавный у вас адрес</p>
-          <label class="modal-delivery-label" >Что нужно привезти:
+          <div class="modal-name-wrapper">
+            <label class="modal-delivery-label" >Ваше имя:
+              <div class="modal-input-name-wrapper">
+                <input class="modal-delivery-name " type="text" placeholder="Имя фамилия" autocomplete="off"> <!--modal-input-error класс ошибки-->
+              </div>
+            </label>
+            <p class="message">Пожалуйста, представьтесь</p> <!--message-error класс ошибки-->
+          </div>
+          <div class="modal-email-wrapper">
+            <label class="modal-delivery-label" >Ваш e-mail:
+              <div class="modal-input-email-wrapper">
+                <input class="modal-delivery-email" type="text" placeholder="Введите e-mail" autocomplete="off" required><!--modal-input-error класс ошибки-->
+              </div>
+            </label>
+            <p class="message">Забавный у вас адрес</p><!--message-error класс ошибки-->
+          </div>
+          <label class="modal-delivery-label modal-text" >Что нужно привезти:
             <input class="modal-delivery-what" type="text" placeholder="В свободной форме" autocomplete="off">
           </label>
-          <label class="modal-delivery-label" >Количество:
-            <input class="modal-delivery-what" type="number" value="1">
+          <label class="modal-delivery-label modal-col" >Количество:
+            <div class="modal-input-col-wrapper">
+              <input class="modal-delivery-col" type="number" value="1">
+            </div>
+            <div class="modal-delivery-info info">
+              <p class="info-description">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+            </div>
           </label>
-          <button type="submit" class="modal-send">Отправить</button>
+          <button type="submit" class="button modal-send">Отправить</button>
         </form>
       </div>
     </div>
