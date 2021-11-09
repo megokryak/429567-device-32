@@ -22,29 +22,31 @@
             <a class="submenu-link login" href="#">Коля Петухов</a>
             <a class="submenu-link exit" href="#">Выйти</a>
             <a class="submenu-link save" href="#">Сравнить</a>
-            <a class="submenu-link basket-link basket-link-products" href="#">Корзина</a>
-            <div class="basket">
-              <ul class="basket-list">
-                <li class="basket-item">
-                  <a  class="basket-item-link" href="#">
-                    <img class="basket-item-img" src="img/products/product-1-mini.jpg" alt="Любительская селфи палочка" width="41" height="43">
-                    <p class="basket-item-name">Любительская селфи-палка</p>
-                  </a>
-                  <button type="button" class="basket-item-del"><span class = "visually-hidden">Удалить из корзины</span></button>
-                </li>
-                <li class="basket-item">
-                  <a  class="basket-item-link" href="#">
-                    <img class="basket-item-img" src="img/products/product-2-mini.jpg" alt="Профессиональная селфи палочка" width="41" height="43">
-                    <p class="basket-item-name">Профессиональная селфи-палка</p>
-                  </a>
-                  <button type="button" class="basket-item-del"><span class = "visually-hidden">Удалить из корзины</span></button>
-                </li>
-              </ul>
-              <div class="basket-total total">
-                <p class="total-products">Товаров: 2</p>
-                <p class="total-price">Сумма: 2000 Р</p>
+            <div class="basket-wrapper">
+              <a class="submenu-link basket-link basket-link-products" href="#">Корзина</a>
+              <div class="basket">
+                <ul class="basket-list">
+                  <li class="basket-item">
+                    <a  class="basket-item-link" href="#">
+                      <img class="basket-item-img" src="img/products/product-1-mini.jpg" alt="Любительская селфи палочка" width="41" height="43">
+                      <p class="basket-item-name">Любительская<br/>селфи-палка</p>
+                    </a>
+                    <button type="button" class="basket-item-del"><span class = "visually-hidden">Удалить из корзины</span></button>
+                  </li>
+                  <li class="basket-item">
+                    <a  class="basket-item-link" href="#">
+                      <img class="basket-item-img" src="img/products/product-2-mini.jpg" alt="Профессиональная селфи палочка" width="41" height="43">
+                      <p class="basket-item-name">Профессиональная селфи-палка</p>
+                    </a>
+                    <button type="button" class="basket-item-del"><span class = "visually-hidden">Удалить из корзины</span></button>
+                  </li>
+                </ul>
+                <div class="basket-total total">
+                  <p class="total-products">Товаров: 2</p>
+                  <p class="total-price">Сумма: 2000 Р</p>
+                </div>
+                <a class="basket-open-link" href="#">Открыть корзину</a>
               </div>
-              <a class="basket-open-link" href="#">Открыть корзину</a>
             </div>
           </div>
         </div>
@@ -121,7 +123,7 @@
               <legend class="filter-title">Стоимость</legend>
                 <div class="range">
                   <div class="range-scale">
-                    <div class="range-bar" style="left: 0px; width: 136px">
+                    <div class="range-bar" style="left: 0px; width: 109px">
                       <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
@@ -146,14 +148,14 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="black">
+                    <input class="visually-hidden control-input" type="checkbox" name="black" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Черный</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="white">
+                    <input class="visually-hidden control-input" type="checkbox" name="white" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Белый</span>
                   </label>
@@ -187,7 +189,7 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="product-group" value="yes">
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="yes" checked>
                     <span class="control-mark"></span>
                 <span class="control-label">Есть</span>
                   </label>
@@ -206,12 +208,12 @@
         </section>
         <div class="products-wrapper">
           <section class="sort-products">
-            <h2 class="sort-products-title">Сортировать</h2>
+            <h2 class="sort-products-title">Сортировка</h2>
             <div class="sort-products-wrapper">
-              <a class="select-control-link" href="#">Сначала популярное</a>
+              <a class="select-control-link" href="#">Сначала популярные</a>
               <ul class="sorting-type sorting-type-open"> <!--sorting-type-open класс для открытия при клике-->
                 <li class="select-control">
-                  <a class="select-control-link" href="#">Сначала популярное</a>
+                  <a class="select-control-link" href="#">Сначала популярные</a>
                 </li>
                 <li class="select-control">
                   <a class="select-control-link" href="#">Теперь не очень популярное</a>
@@ -238,7 +240,7 @@
                 </h3>
                 <b class="product-card-price">500 ₽</b>
                 <!-- </div> -->
-                <a class="product-card-button" href="#">Подробнее</a>
+                <a class="product-card-button button" href="#">Подробнее</a>
               </div>
               <div class="product-card">
                 <a class="product-card-link" href="#">
@@ -246,11 +248,11 @@
                 </a>
                 <!-- <div class="product-card-wrapper"> -->
                 <h3 class="product-card-title">
-                  <a class="product-card-link-title" href="#">Профессиональная селфи-палка</a>
+                  <a class="product-card-link-title" href="#">Профессиональная<br/>селфи-палка</a>
                 </h3>
-                <b class="product-card-price">1500 ₽</b>
+                <b class="product-card-price">1 500 ₽</b>
                 <!-- </div> -->
-                <a class="product-card-button" href="#">Подробнее</a>
+                <a class="product-card-button button" href="#">Подробнее</a>
               </div>
               <div class="product-card">
                 <a class="product-card-link" href="#">
@@ -258,11 +260,11 @@
                 </a>
                 <!-- <div class="product-card-wrapper"> -->
                 <h3 class="product-card-title">
-                  <a class="product-card-link-title" href="#">Непотопляемая селфи-палка</a>
+                  <a class="product-card-link-title" href="#">Непотопляемая<br/>селфи-палка</a>
                 </h3>
-                <b class="product-card-price">2500 ₽</b>
+                <b class="product-card-price">2 500 ₽</b>
                 <!-- </div> -->
-                <a class="product-card-button" href="#">Подробнее</a>
+                <a class="product-card-button button" href="#">Подробнее</a>
               </div>
               <div class="product-card product-card-new">
                 <a class="product-card-link" href="#">
@@ -272,9 +274,9 @@
                 <h3 class="product-card-title">
                   <a class="product-card-link-title" href="#">Селфи-палка «Следуй за мной»</a>
                 </h3>
-                <b class="product-card-price">4900 ₽</b>
+                <b class="product-card-price">4 900 ₽</b>
                 <!-- </div> -->
-                <a class="product-card-button" href="#">Подробнее</a>
+                <a class="product-card-button button" href="#">Подробнее</a>
               </div>
             </div>
             <button class="pagination-show-more" type="button">Загрузить ещё</button>
@@ -356,43 +358,5 @@
         </div>
       </div>
     </footer>
-    <div class="modal-container modal-close"> <!--modal-close класс закрывающий модальное окно-->
-      <div class="modal modal-delivery">
-        <div class="modal-title-wrapper">
-          <h2 class="modal-title">Доставка под заказ</h2>
-          <button class="modal-close-button"><span class="visually-hidden">Закрыть модальное окно</span></button>
-        </div>
-        <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="GET">
-          <div class="modal-name-wrapper">
-            <label class="modal-delivery-label" >Ваше имя:
-              <div class="modal-input-name-wrapper">
-                <input class="modal-delivery-name " type="text" placeholder="Имя фамилия" autocomplete="off"> <!--modal-input-error класс ошибки-->
-              </div>
-            </label>
-            <p class="message">Пожалуйста, представьтесь</p> <!--message-error класс ошибки-->
-          </div>
-          <div class="modal-email-wrapper">
-            <label class="modal-delivery-label" >Ваш e-mail:
-              <div class="modal-input-email-wrapper">
-                <input class="modal-delivery-email" type="text" placeholder="Введите e-mail" autocomplete="off" required><!--modal-input-error класс ошибки-->
-              </div>
-            </label>
-            <p class="message">Забавный у вас адрес</p><!--message-error класс ошибки-->
-          </div>
-          <label class="modal-delivery-label modal-text" >Что нужно привезти:
-            <input class="modal-delivery-what" type="text" placeholder="В свободной форме" autocomplete="off">
-          </label>
-          <label class="modal-delivery-label modal-col" >Количество:
-            <div class="modal-input-col-wrapper">
-              <input class="modal-delivery-col" type="number" value="1">
-            </div>
-            <div class="modal-delivery-info info">
-              <p class="info-description">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
-            </div>
-          </label>
-          <button type="submit" class="button modal-send">Отправить</button>
-        </form>
-      </div>
-    </div>
   </body>
 </html>

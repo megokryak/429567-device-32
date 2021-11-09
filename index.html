@@ -9,7 +9,7 @@
   <body>
     <header class="page-header container">
       <nav class="navigation">
-        <a class="logo" href="">
+        <a class="logo" href="index.html">
           <img src="img/device.svg" width="145" height="36" alt="Device логотип магазина.">
         </a>
         <div class="navigation-wrapper">
@@ -284,7 +284,7 @@
         <div class="about-company-wrapper">
           <section class="about">
             <h2 class="about-title">О нас</h2>
-            <p class="about-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас. Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+            <p class="about-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p class="about-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
             <ul class="about-transport">
               <li class="about-transport-item">Медовые линии</li>
@@ -320,7 +320,7 @@
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="GET">
               <div class="subscribe-wrapper-input">
                 <label class="visually-hidden" for="subscribe-input">Email</label>
-                <input class="subscribe-input" name="email" id="subscribe-input" type="email" placeholder="Ваш email" required>  <!--.subscribe-input-error - класс с ошибкой заполнения формы-->
+                <input class="subscribe-input" name="email" id="subscribe-input" type="email" placeholder="Ваш e-mail" required>  <!--.subscribe-input-error - класс с ошибкой заполнения формы-->
               </div>
               <button class="subscribe-submit" type="submit" name="subscribe">Подписаться</button>
             </form>
@@ -379,5 +379,43 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container modal-close"> <!--modal-close класс закрывающий модальное окно-->
+      <div class="modal modal-delivery">
+        <div class="modal-title-wrapper">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <button class="modal-close-button"><span class="visually-hidden">Закрыть модальное окно</span></button>
+        </div>
+        <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="GET">
+          <div class="modal-name-wrapper">
+            <label class="modal-delivery-label" >Ваше имя:
+              <div class="modal-input-name-wrapper">
+                <input class="modal-delivery-name " type="text" placeholder="Имя фамилия" autocomplete="off"> <!--modal-input-error класс ошибки-->
+              </div>
+            </label>
+            <p class="message">Пожалуйста, представьтесь</p> <!--message-error класс ошибки-->
+          </div>
+          <div class="modal-email-wrapper">
+            <label class="modal-delivery-label" >Ваш e-mail:
+              <div class="modal-input-email-wrapper">
+                <input class="modal-delivery-email" type="text" placeholder="Введите e-mail" autocomplete="off" required><!--modal-input-error класс ошибки-->
+              </div>
+            </label>
+            <p class="message">Забавный у вас адрес</p><!--message-error класс ошибки-->
+          </div>
+          <label class="modal-delivery-label modal-text" >Что нужно привезти:
+            <input class="modal-delivery-what" type="text" placeholder="В свободной форме" autocomplete="off">
+          </label>
+          <label class="modal-delivery-label modal-col" >Количество:
+            <div class="modal-input-col-wrapper">
+              <input class="modal-delivery-col" type="number" value="1">
+            </div>
+            <div class="modal-delivery-info info">
+              <p class="info-description">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p>
+            </div>
+          </label>
+          <button type="submit" class="button modal-send">Отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
