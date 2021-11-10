@@ -13,7 +13,7 @@
           <img src="img/device.svg" width="145" height="36" alt="Device логотип магазина.">
         </a>
         <div class="navigation-wrapper">
-          <form class="page-search" action="#" method="GET">
+          <form class="page-search" action="https://echo.htmlacademy.ru/"" method="GET">
             <label class="visually-hidden" for="page-search-input">Поиск по сайту</label>
             <input class="page-search-input" id="page-search-input" type="text" name="page-search" placeholder="Поиск по сайту" autocomplete="off">
             <button class="page-search-button" type="submit">Найти</button>
@@ -21,29 +21,31 @@
           <div class="auth">
             <a class="submenu-link enter" href="#">Войти</a>
             <a class="submenu-link save" href="#">Сравнить</a>
-            <a class="submenu-link basket-link" href="#">Корзина</a>
-            <div class="basket">
-              <ul class="basket-list">
-                <li class="basket-item">
-                  <a  class="basket-item-link" href="#">
-                    <img class="basket-item-img" src="img/products/product-1-mini.jpg" alt="Любительская селфи палочка" width="41" height="43">
-                    <p class="basket-item-name">Любительская селфи-палка</p>
-                  </a>
-                  <button type="button" class="basket-item-del"><span class = "visually-hidden">Удалить из корзины</span></button>
-                </li>
-                <li class="basket-item">
-                  <a  class="basket-item-link" href="#">
-                    <img class="basket-item-img" src="img/products/product-2-mini.jpg" alt="Профессиональная селфи палочка" width="41" height="43">
-                    <p class="basket-item-name">Профессиональная селфи-палка</p>
-                  </a>
-                  <button type="button" class="basket-item-del"><span class = "visually-hidden">Удалить из корзины</span></button>
-                </li>
-              </ul>
-              <div class="basket-total total">
-                <p class="total-products">Товаров: 2</p>
-                <p class="total-price">Сумма: 2000 Р</p>
+            <div class="basket-wrapper">
+              <a class="submenu-link basket-link basket-link-products" href="#">Корзина</a>
+              <div class="basket">
+                <ul class="basket-list">
+                  <li class="basket-item">
+                    <a  class="basket-item-link" href="#">
+                      <img class="basket-item-img" src="img/products/product-1-mini.jpg" alt="Любительская селфи палочка" width="41" height="43">
+                      <p class="basket-item-name">Любительская селфи-палка</p>
+                    </a>
+                    <button type="button" class="basket-item-del"><span class = "visually-hidden">Удалить из корзины</span></button>
+                  </li>
+                  <li class="basket-item">
+                    <a  class="basket-item-link" href="#">
+                      <img class="basket-item-img" src="img/products/product-2-mini.jpg" alt="Профессиональная селфи палочка" width="41" height="43">
+                      <p class="basket-item-name">Профессиональная селфи-палка</p>
+                    </a>
+                    <button type="button" class="basket-item-del"><span class = "visually-hidden">Удалить из корзины</span></button>
+                  </li>
+                </ul>
+                <div class="basket-total total">
+                  <p class="total-products">Товаров: 2</p>
+                  <p class="total-price">Сумма: 2000 Р</p>
+                </div>
+                <a class="basket-open-link" href="#">Открыть корзину</a>
               </div>
-              <a class="basket-open-link" href="#">Открыть корзину</a>
             </div>
           </div>
         </div>
@@ -279,6 +281,17 @@
       <div class="about-company container">
         <div class="about-company-link-wrapper">
           <a class="about-company-link" href="#">Доставим редкий товар под заказ</a>
+          <svg class="about-company-svg" width="47" height="31" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <path d="m46.7 15.4-6.5-8.2c-.3-.4-.7-.6-1.2-.6h-8.3V1.5C30.7.7 30 0 29.2 0H1.5C.7 0 0 .7 0 1.5S.7 3 1.5 3h26.2V24.7H15.8c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.2 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h13.4c.8 0 1.5-.7 1.5-1.5V9.6h7.6l5.7 7.3v7.9h-2.2c-.6-1.9-2.4-3.3-4.5-3.3-2.6 0-4.8 2.2-4.8 4.8 0 2.6 2.1 4.8 4.8 4.8 2.1 0 3.9-1.4 4.5-3.3h3.7c.8 0 1.5-.7 1.5-1.5v-9.9c0-.4-.1-.7-.3-1ZM11.3 28c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Zm26.1 0c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.9 1.8-1.8 1.8Z" />
+              <path d="M19.4 9.6c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5H4.8c-.8 0-1.5.7-1.5 1.5S4 9.6 4.8 9.6h14.6ZM17.7 14.7c0-.8-.7-1.5-1.5-1.5H1.5c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h14.7c.8 0 1.5-.7 1.5-1.5Z" />
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path d="M0 0h47v31H0z" />
+              </clipPath>
+            </defs>
+          </svg>
           <span class="about-company-link-info"></span>
         </div>
         <div class="about-company-wrapper">
