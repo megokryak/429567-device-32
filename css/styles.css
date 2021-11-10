@@ -2619,7 +2619,7 @@ body {
   position: relative;
   margin: auto;
   width: 920px;
-  padding: 70px;
+  padding: 58px 70px 60px 70px;
   background-color: #FFFFFF;
   border: 10px solid #000000;
   box-sizing: border-box;
@@ -2628,11 +2628,11 @@ body {
 
 .modal-title-wrapper {
   display: flex;
-  justify-content: space-between;
+  position: relative;
 }
 
 .modal-title {
-  margin: 0 0 60px 0;
+  margin: 0 0 63px 0;
   padding: 5px 5px 5px 0;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -2656,12 +2656,15 @@ body {
   padding: 5px;
   cursor: pointer;
   outline: none;
+  position: absolute;
+  top: 9px;
+  right: -11px;
 }
 
 .modal-delivery-form {
   display: grid;
   grid-template-columns: 360px 160px 160px;
-  grid-template-rows: 124px 94px 60px;
+  grid-template-rows: 124px 94px 82px;
   column-gap: 40px;
   row-gap: 10px;
 }
@@ -2731,7 +2734,7 @@ flex-direction: column;
   width: 100%;
   border: 5px solid transparent;
   margin: 14px 0 0 0;
-  padding: 20px 50px 20px 20px;
+  padding: 15px 50px 15px 16px;
   box-sizing: border-box;
 }
 
@@ -2837,8 +2840,8 @@ flex-direction: column;
   background-color: #FFE17F;
   display: flex;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -3px;
+  right: 14px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -2894,6 +2897,17 @@ color: #FFFFFF;
 .message-error {
   color: #FF3D3D;
   display: block;
+}
+
+.message-info {
+  color: #000000;
+  display: block;
+}
+
+.modal-send {
+  align-self: end;
+  margin-right: 160px;
+  padding: 15px 25px;
 }
 
 /*modal*/
