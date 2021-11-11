@@ -114,7 +114,7 @@ body {
   color: rgba(0,0,0,1);
   background-color: transparent;
   flex-grow: 1;
-  padding: 10px 0 10px 48px;
+  padding: 10px 5px 10px 48px;
   border: 2px solid transparent;
   border-radius: 20px;
   box-sizing: border-box;
@@ -141,6 +141,10 @@ body {
   border-color: #000000;
   border-right: none;
   border-radius: 20px 0 0 20px;
+}
+
+.page-search-input:not(:placeholder-shown) ~.page-search-button:focus {
+  border-color: #AF4FFF;
 }
 
 .page-search::before {
@@ -172,6 +176,7 @@ body {
   padding: 0 10px;
   border: 2px solid #000000;
   border-radius: 0 20px 20px 0;
+  outline: none;
 }
 
 .page-search-button:focus {
@@ -1237,7 +1242,7 @@ body {
   content: "";
   display: inline-block;
   width: 125px;
-  height: 100px;
+  height: 100%;
   background-color:  #FFE17F;
   background-position: center;
   position: absolute;
@@ -1250,8 +1255,9 @@ body {
   display: block;
   position: absolute;
   left: 44px;
-  top: 40px;
+  top: 50%;
   z-index: 2;
+  margin: -15px 0 0 0;
   fill: #000000;
 }
 
@@ -1715,40 +1721,23 @@ body {
 }
 
 
-.footer-social-item:first-child .footer-social-link::before {
-  content: "";
+.footer-social-svg {
   position: absolute;
-  width: 9px;
-  height: 18px;
+  top: 50%;
+  left: 50%;
+  fill: #464646;
+}
+
+.footer-fb {
   margin: -9px 0 0 -4px;
-  background-image: url("../img/facebook.svg");
-  background-repeat: no-repeat;
-  top: 50%;
-  left: 50%;
 }
 
-.footer-social-item:nth-child(2) .footer-social-link::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
+.footer-inst {
   margin: -8px 0 0 -8px;
-  background-image: url("../img/instagram.svg");
-  background-repeat: no-repeat;
-  top: 50%;
-  left: 50%;
 }
 
-.footer-social-item:last-child .footer-social-link::before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 14px;
-  margin: -7px 0 0 -8px;
-  background-image: url("../img/twitter.svg");
-  background-repeat: no-repeat;
-  top: 50%;
-  left: 50%;
+.footer-twit {
+  margin: -7px 0 0 -7px;
 }
 
 .footer-social-link {
@@ -1766,12 +1755,17 @@ body {
   border-color: #AF4FFF;
 }
 
+.footer-social-link:focus .footer-social-svg {
+  fill: #ffffff;
+}
+
 .footer-social-link:hover {
   background-color: #FFC700;
 }
 
-.footer-social-link:active::before {
+.footer-social-link:active .footer-social-svg {
   opacity: 0.3;
+  fill: #464646;
 }
 
 .footer-social-link:active {
@@ -2356,6 +2350,7 @@ body {
   text-decoration: none;
   position: relative;
   border: 5px solid transparent;
+  outline: none;
 }
 
 .select-control-link:hover {
@@ -2835,9 +2830,8 @@ flex-direction: column;
   color: rgba(0, 0, 0, 0.6);
 }
 
-.modal-input-name-wrapper,
-.modal-input-email-wrapper,
-.modal-input-col-wrapper {
+
+.modal-col {
   position: relative;
 }
 
@@ -2869,7 +2863,7 @@ flex-direction: column;
   margin: -1px 0 0 0;
 }
 
-.modal-input-col-wrapper::before {
+.modal-col::before {
   content: "";
   width: 16px;
   height: 16px;
@@ -2877,14 +2871,14 @@ flex-direction: column;
   position: absolute;
   top: 50%;
   left: 20px;
-  margin: -2px 0 0 0;
+  margin: 8px 0 0 0;
   background-image: url("../img/minus_modal.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 
-.modal-input-col-wrapper::after {
+.modal-col::after {
   content: "";
   width: 16px;
   height: 16px;
@@ -2892,7 +2886,7 @@ flex-direction: column;
   position: absolute;
   top: 50%;
   right: 20px;
-  margin: -2px 0 0 0;
+  margin: 8px 0 0 0;
   background-image: url("../img/plus_modal.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -2903,22 +2897,26 @@ flex-direction: column;
   position: relative;
 }
 
-.modal-col::before {
+.modal-col-wrapper::before {
   content: "i";
   width: 26px;
   height: 26px;
   background-color: #FFE17F;
   display: flex;
   position: absolute;
-  top: -3px;
+  top: -1px;
   right: 14px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
 }
 
+.modal-col-wrapper {
+  position: relative;
+}
+
 .modal-delivery-info {
-  display: none;
+  display: block;
   width: 200px;
   padding: 19px;
   margin: 0;
@@ -2927,7 +2925,7 @@ flex-direction: column;
   background-color: #000000;
   position: absolute;
   top: 35px;
-  right: -34px;
+  right: -20px;
 }
 
 .modal-delivery-info::before {
@@ -2941,6 +2939,11 @@ flex-direction: column;
   height: 6px;
   background-image: url("../img/triangle.svg");
   background-repeat: no-repeat;
+}
+
+
+.modal-delivery-info-close {
+  display: none;
 }
 
 .info-description {
