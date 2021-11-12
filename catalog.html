@@ -130,19 +130,19 @@
                           <button class="range-toggle toggle-min" type="button">
                             <span class="visually-hidden">Изменить минимальную цену.</span>
                           </button>
-                          <label class="catalog-filter-label" for="min"> <!--.catalog-filter-active и .catalog-filter-focus классы изменения состояния-->
+                          <label class="catalog-filter-label" for="min">
                             от
                           </label>
-                          <input class="catalog-filter-input" id="min" type="number" name="min-price" value="0"> <!--.catalog-filter-active и .catalog-filter-focus классы изменения состояния-->
+                          <input class="catalog-filter-input" id="min" type="number" name="min-price" value="0">
                         </div>
                         <div class="range-wrapper range-wrapper-max">
                           <button class="range-toggle toggle-max" type="button">
                             <span class="visually-hidden">Изменить максимальную цену.</span>
                           </button>
-                          <label class="catalog-filter-label" for="max"><!--.catalog-filter-active и .catalog-filter-focus классы изменения состояния-->
+                          <label class="catalog-filter-label" for="max">
                             до
                           </label>
-                          <input class="catalog-filter-input" id="max" type="number" name="max-price" value="5000"><!--.catalog-filter-active и .catalog-filter-focus классы изменения состояния-->
+                          <input class="catalog-filter-input" id="max" type="number" name="max-price" value="5000">
                         </div>
                       </div>
                     </div>
@@ -239,48 +239,40 @@
                 <a class="product-card-link" href="#">
                   <img class="product-card-image" src="img/products/product-1.jpg" width="360" height="380" alt="Селфи-палка для любителей.">
                 </a>
-                <!-- <div class="product-card-wrapper"> -->
                 <h3 class="product-card-title">
                   <a class="product-card-link-title" href="#">Любительская селфи-палка</a>
                 </h3>
                 <b class="product-card-price">500 ₽</b>
-                <!-- </div> -->
                 <a class="product-card-button button" href="#">Подробнее</a>
               </div>
               <div class="product-card">
                 <a class="product-card-link" href="#">
                   <img class="product-card-image" src="img/products/product-2.jpg" width="360" height="380" alt="Селфи-палка для профи.">
                 </a>
-                <!-- <div class="product-card-wrapper"> -->
                 <h3 class="product-card-title">
                   <a class="product-card-link-title" href="#">Профессиональная<br/>селфи-палка</a>
                 </h3>
                 <b class="product-card-price">1 500 ₽</b>
-                <!-- </div> -->
                 <a class="product-card-button button" href="#">Подробнее</a>
               </div>
               <div class="product-card">
                 <a class="product-card-link" href="#">
                   <img class="product-card-image" src="img/products/product-3.jpg" width="360" height="380" alt="Селфи-палка для любителей покупаться.">
                 </a>
-                <!-- <div class="product-card-wrapper"> -->
                 <h3 class="product-card-title">
                   <a class="product-card-link-title" href="#">Непотопляемая<br/>селфи-палка</a>
                 </h3>
                 <b class="product-card-price">2 500 ₽</b>
-                <!-- </div> -->
                 <a class="product-card-button button" href="#">Подробнее</a>
               </div>
               <div class="product-card product-card-new">
                 <a class="product-card-link" href="#">
                   <img class="product-card-image" src="img/products/product-4.jpg" width="360" height="380" alt="Селфи-палка Follow me.">
                 </a>
-                <!-- <div class="product-card-wrapper"> -->
                 <h3 class="product-card-title">
                   <a class="product-card-link-title" href="#">Селфи-палка «Следуй за мной»</a>
                 </h3>
                 <b class="product-card-price">4 900 ₽</b>
-                <!-- </div> -->
                 <a class="product-card-button button" href="#">Подробнее</a>
               </div>
             </div>
@@ -308,7 +300,6 @@
                 <a class="pagination-link pagination-next" href="#">Вперед</a>
               </li>
             </ul>
-
           </section>
         </div>
       </div>
@@ -398,10 +389,13 @@
             <input class="modal-delivery-what" type="text" placeholder="В свободной форме" autocomplete="off">
           </label>
           <div class="modal-col-wrapper">
+            <div class="modal-info">
+              <span class="visually-hidden">Дополнительная информация</span>
+            </div>
             <label class="modal-delivery-label modal-col" >Количество:
               <input class="modal-delivery-col" type="number" value="1">
             </label>
-            <p class="modal-delivery-info info-description modal-delivery-info-close">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p> <!--modal-delivery-info-close - закрытие инфо-->
+            <p class="modal-delivery-info info-description">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</p> <!--modal-delivery-info-close - закрытие инфо-->
           </div>
           <button type="submit" class="button modal-send">Отправить</button>
         </form>
