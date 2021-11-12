@@ -974,6 +974,7 @@ body {
   align-items: center;
   border: 5px solid transparent;
   box-sizing: border-box;
+  outline: none;
 }
 
 .category-link-title {
@@ -984,6 +985,7 @@ body {
   color: #000000;
   letter-spacing: -0.02em;
   text-decoration: none;
+  outline: none;
 }
 
 .category-name {
