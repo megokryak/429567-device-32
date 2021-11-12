@@ -948,27 +948,42 @@ body {
 }
 
 .category-item {
+  display: block;
   width: 160px;
   list-style-type: none;
 }
 
-.category-item:nth-child(2) .category-link .category-name {
-  padding-right: 35px;
-}
-
-.category-item:nth-child(2) .category-link .category-img-wrapper {
+.category-item:nth-child(2)  .category-link {
   align-items: flex-end;
 }
 
-.category-item:nth-child(2) .category-link .category-img-wrapper .category-img {
-  margin: 0 0 -5px 0;
+.category-item:nth-child(2)  .category-img {
+  margin-bottom: -5px;
 }
 
 .category-link {
-  display: block;
+  display: flex;
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
   text-decoration: none;
   outline: none;
   line-height: 24px;
+  margin: 0 0 32px 0;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid transparent;
+  box-sizing: border-box;
+}
+
+.category-link-title {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  letter-spacing: -0.02em;
+  text-decoration: none;
 }
 
 .category-name {
@@ -980,50 +995,31 @@ body {
   letter-spacing: -0.02em;
 }
 
-.category-img-wrapper {
-  width: 160px;
-  height: 160px;
-  color: #000000;
-  background-color: #FFE17F;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0 32px 0;
-  box-sizing: border-box;
-  border: 5px solid transparent;
-}
-
 .category-img {
   display: block;
 }
 
-.category-link:hover .category-img-wrapper {
+.category-item:hover .category-link {
   background-color: #FFC700;
 }
 
-.category-link:focus .category-img-wrapper {
+.category-item:focus-within .category-link{
   border-color: #AF4FFF;
 }
 
-.category-link:focus .category-name {
+.category-item:focus-within .category-link-title {
   color: #AF4FFF;
 }
 
-
-.category-link:active .category-img-wrapper {
+.category-item:active .category-link {
   border-color: transparent;
-}
-
-.category-link:active .category-img-wrapper .category-img {
   opacity: 0.3;
 }
 
-
-.category-link:active .category-name {
+.category-item:active .category-link-title {
   opacity: 0.3;
   color: #000000;
 }
-
 
 /*category*/
 
@@ -2095,16 +2091,6 @@ body {
   background-color: #000000;
 }
 
-/* .toggle-min {
-  top: -8px;
-  left: -10px;
-}
-
-.toggle-max {
-  top: -8px;
-  right: -10px;
-} */
-
 .range-wrapper-inputs {
   display: flex;
 }
@@ -2125,13 +2111,6 @@ body {
   color: #AF4FFF;
 }
 
-/* .catalog-filter-focus {
-  color: #AF4FFF;
-} */
-
-/* .catalog-filter-active {
-  color: rgba(0, 0, 0, 1);
-} */
 
 .catalog-filter-input {
   font-size: 15px;
@@ -2344,6 +2323,9 @@ body {
 
 
 .select-control-link {
+  display: block;
+  margin: 0;
+  padding: 0 41px 0 0;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
@@ -2370,7 +2352,7 @@ body {
   content: "";
   position: absolute;
   top: 8px;
-  right: -26px;
+  right: 15px;
   width: 11px;
   height: 6px;
   background-image: url("../img/dropdown.svg");
@@ -2589,18 +2571,19 @@ body {
   outline: none;
 }
 
-.pagination-show-more:focus {
+.pagination-show-more:focus:not(:active) {
   border: 5px solid #AF4FFF;
   padding: 13px 0;
 }
 
 .pagination-show-more:hover {
   border: 3px solid rgba(0, 0, 0, 1);
+  padding: 15px 0;
 }
 
 .pagination-show-more:active {
   opacity: 0.3;
-
+  padding: 15px 0;
 }
 
 .pagination-link {
@@ -2897,26 +2880,32 @@ flex-direction: column;
   position: relative;
 }
 
-.modal-col-wrapper::before {
-  content: "i";
-  width: 26px;
-  height: 26px;
-  background-color: #FFE17F;
-  display: flex;
-  position: absolute;
-  top: -1px;
-  right: 14px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-}
-
 .modal-col-wrapper {
   position: relative;
 }
 
-.modal-delivery-info {
+.modal-info {
+  width: 26px;
+  height: 26px;
+  background-color: #FFE17F;
+  background-image: url("../img/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -1px;
+  right: 14px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.modal-info:hover ~.modal-delivery-info{
   display: block;
+}
+
+
+
+.modal-delivery-info {
+  display: none;
   width: 200px;
   padding: 19px;
   margin: 0;
